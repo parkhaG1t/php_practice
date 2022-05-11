@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>assignment2</title>
+	<meta charset="utf-8">
+	</head>
+	<body>
+		<h2>과제 2</h2>
+		<form action="assignment2.php" method="post" id="assig2">
+			<table>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="uid"></td>
+				</tr>
+				
+				<tr>
+					<td>Phone</td>
+					<td><input type="number" name="uphone"></td>
+				</tr>
+
+				<tr>
+					<td>Pick-up Date</td>
+					<td><input type="date" name="upickup"></td>
+				</tr>
+				
+				<tr>
+					<td>Return Date</td>
+					<td><input type="date" name="ureturn"></td>
+				</tr>
+				
+				<tr>
+					<td>Cars</td>
+					<td>
+					<input type="radio" name="ucars" checked value="k3">기아 K3 (21500/1day)<br>
+					<input type="radio" name="ucars" checked value="k5">기아 K5 (28500/1day)<br>
+					<input type="radio" name="ucars" checked value="k8">기아 K8 (35600/1day)<br>
+					<input type="radio" name="ucars" checked value="쏘나타">현대 쏘나타 (29700/1day)<br>
+					<input type="radio" name="ucars" checked value="투싼">현대 투싼 (30500/1day)<br>
+					<input type="radio" name="ucars" checked value="그랜저">현대 그랜저 (33400/1day)
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Accessories</td>
+					<td>
+					<input type="checkbox" name="acc[]" value="blackbox">블랙박스 (1100/1day)<br>
+					<input type="checkbox" name="acc[]" value="insurance">운전자보험 (4500/1day)<br>
+					<input type="checkbox" name="acc[]" value="stroller">유모차 (1700/1day)<br>
+					<input type="checkbox" name="acc[]" value="camping">캠핑용품 (7200/1day)<br>
+					<input type="checkbox" name="acc[]" value="golfum">골프우산 (2000/렌트기간)<br>
+					<input type="checkbox" name="acc[]" value="icebox">아이스박스 (8000/렌트기간)
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="대여신청">
+			<input type="reset" value="대여취소">
+			
+		</form>
+	</body>
+
+</html>

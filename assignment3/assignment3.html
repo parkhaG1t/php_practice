@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>과제 3</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h2>과제 3</h2>
+		<form action="assignment3.php" method="post" id="assig3">
+			<table>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="uname"></td>
+				</tr>
+				<tr>
+					<td>Phone</td>
+					<td><input type="number" name="uphone"></td>
+				</tr>
+				<tr>
+					<td>Departure Station</td>
+					<td>
+					<select name="departure">
+						<option value="행신">행신</option>
+						<option value="서울">서울</option>
+						<option value="광명">광명</option>
+						<option value="천안아산">천안아산</option>
+						<option value="오송">오송</option>
+						<option value="대전">대전</option>
+						<option value="김천구미">김천구미</option>
+						<option value="동대구">동대구</option>
+						<option value="신경주">신경주</option>
+						<option value="울산">울산</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Arrival Station</td>
+					<td>
+					<select name="arrival">
+						<option value="행신">행신</option>
+						<option value="서울">서울</option>
+						<option value="광명">광명</option>
+						<option value="천안아산">천안아산</option>
+						<option value="오송">오송</option>
+						<option value="대전">대전</option>
+						<option value="김천구미">김천구미</option>
+						<option value="동대구">동대구</option>
+						<option value="신경주">신경주</option>
+						<option value="울산">울산</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Seat Type</td>
+					<td>
+					<input type="radio" name="seattype" checked value="normal">일반실
+					<input type="radio" name="seattype" checked value="special">특실
+					</td>
+				</tr>
+				<tr>
+					<td>Seats to buy</td>
+					<td><input type="number" name="seatstobuy"></td>
+				</tr>
+			</table>
+			<br>
+			<input type="submit" value="요금확인">
+			<input type="reset" value="입력취소">
+		</form>
+	</body>
+
+</html>
