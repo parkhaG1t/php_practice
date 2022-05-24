@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<title>write note</title>
+		<meta charset="utf-8">
+		<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		input[type=text], input[type=int], input[type=date], select, textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+		}
+		label {
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-top: 10px;
+			float: right;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+		.col-25 {
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+		.col-75 {
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+		}
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		a {
+		text-decoration: none;
+		font-size: 20px;
+		}
+		</style>
+	</head>
+	<body>
+	<h2>용돈 기록</h2><hr>
+	<a href="index.php">메인 페이지</a>
+    <div class="container">
+        <form action="writenoteproc.php" method="post">
+            <div class="row">
+              <div class="col-25">
+                <label>용돈</label>
+              </div>
+              <div class="col-75">
+                <input type="text" name="money">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>수입/지출</label>
+              </div>
+              <div class="col-75">
+                <input type="radio" name="inout" value="in">
+				<label>수입</label>
+				<input type="radio" name="inout" value="out">
+				<label>지출</label>
+              </div>
+            </div>
+			<div class="row">
+				<div class="col-25">
+					<label>내용</label>
+				</div>
+				<div class="col-75">
+				<input type="text" name="note">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label>메모</label>
+				</div>
+				<div class="col-75">
+				<input type="text" name="memo">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label>수입지출일</label>
+				</div>
+				<div class="col-75">
+				<input type="date" name="date">
+				</div>
+			</div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+	
+	</body>
+</html>
